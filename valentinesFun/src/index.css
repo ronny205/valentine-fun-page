@@ -1,0 +1,58 @@
+.valentine-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('./valentines-bg.jpg');
+    background-size: cover;
+    backdrop-filter: blur(2px);
+  }
+
+  h2{
+    font-size: 46px;
+    color: white;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .buttons-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .buttons-container button {
+    color: white;
+    padding: 10px 20px;
+    border: none; 
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 120px;
+    box-shadow:  4px 4px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .buttons-container .yes-button {
+    background-color: green;
+    margin-right: 20px;
+  }
+  
+  .buttons-container .no-button {
+    background-color: red; 
+  }
+  .no-button:hover {
+    background-color: green; /* Change background color to green on hover */
+  }
+
+.bunny-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: bunnyHop 0.5s ease-in-out;
+}
+
+@keyframes bunnyHop {
+  0% { transform: translate(-50%, -50%); }
+  50% { transform: translate(-50%, -80%); }
+  100% { transform: translate(-50%, 150%); }
+}

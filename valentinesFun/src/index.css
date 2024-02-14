@@ -40,5 +40,6 @@ h2{
   background-color: red; 
 }
 .no-button:hover {
-  background-color: green; /* Change background color to green on hover */
+  background-color: green; 
+  color: white;
 }
